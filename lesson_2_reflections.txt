@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+You can initialize a repository using 'git init' in the directory where you
+want to create the repository. This creates a hidden .git file that is used
+to keep track of the repository (records changes, commits, etc.), and you
+need to initialize this repository in order to make and share your files
+with others, and also to implement Git as version control for your software.
+The repository starts out with 0 commits, and you can run 'git status' to see
+how there have been no commits made yet, and to see what files are 'untracked'
+in your repository.
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area temporarily stores files that will be included in a commit,
+while the working directory shows where the files are located and usually
+does not change. Similarly, these commits using the files in the staging area
+are what actually change the information and files in the repository, so
+it seems like a good idea to have a step where you can review all files to
+be changed and double-check that you really want to make these changes!
+Otherwise, it would be easy to just randomly commit files if you typed in
+a command wrong, there would be too many commits that have not been thought
+through because there is no checking or review step (which would use the
+staging area).
