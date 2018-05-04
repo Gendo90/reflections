@@ -67,3 +67,19 @@ branch. We represent it on the diagram as two branches that split and merge
 back together to show how a branch was split off for some purpose, like
 collaboration or experimentation, and then rejoined with the branch it split
 from later after the work on that branch was working/complete/acceptable, etc.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+The pros are that the software can just automatically put the files together
+unless there are conflicts, which still must be resolved manually. This is
+better than merging code manually, because it takes less time, especially if
+there is a lot of different code in each branch that has been changed since
+they split. However, you still have to manually choose which code you want in
+your merged version if there are conflicting functions or variables. This
+allows you to have some control over the merge process where some code is
+better for the merged file than other code, and still does not take too long
+because the conflicting code is highlighted by Git. Git is not sophisticated
+enough to make these decisions on its own, and you can always change the code
+in a later commit after merging the files if none of the options given to
+resolve the conflict are satisfying.
