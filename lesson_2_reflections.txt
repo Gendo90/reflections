@@ -55,4 +55,15 @@ easily see the commits where the branches start and end, and you can see
 any sub-branches from those branches or merges. So you can quickly and easily
 get a good understanding of the current branches, their status from their
 commit messages, where/when they branched off, and which commits are
-unreachable from a certain point. 
+unreachable from a certain point.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+The result of merging the two branches together is a single branch that shares
+the same name as one of the 'parent' branches, with the commits for each
+branch being available as commits ordered by timestamp on the new single
+branch. We represent it on the diagram as two branches that split and merge
+back together to show how a branch was split off for some purpose, like
+collaboration or experimentation, and then rejoined with the branch it split
+from later after the work on that branch was working/complete/acceptable, etc.
