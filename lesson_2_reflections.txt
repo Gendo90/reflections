@@ -22,3 +22,14 @@ Otherwise, it would be easy to just randomly commit files if you typed in
 a command wrong, there would be too many commits that have not been thought
 through because there is no checking or review step (which would use the
 staging area).
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+You can compare the files in the staging area to the files in the working
+directory and also to the files in the repository to make sure that you are
+adding the files with the correct changes you want made. This reduces the
+chance of accidental commits that could have errors or unwanted changes in
+them. It also makes it more difficult to change the repository, since you
+need to complete more than a simple "save" to update the repository, which
+helps maintain the security and integrity of the repository.
