@@ -15,3 +15,15 @@ if you are always pulling automatically, because then the program might pull fil
 You could also have files turn "wrong" or contain bad code online, if someone made a mistake with a commit, so you do
 not want to pull the code because you know that it will cause the program to run incorrectly (especially if you have 
 a collaborator or someone who tells you that they made a mistake with a commit or push and the project is malfunctioning).
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+A fork is a "clone" of a repository available on GitHub, so that your account can have a copy of another person's 
+repository available on that website, but you can give them credit and make changes to this version. A clone is just 
+a copy of another repository, regardless of where it is located. It is identical when the "clone" command runs, 
+but changes may be made to it later. Branches are parallel lines of code to the main "branch" that diverge from the 
+main branch of code and therefore share at least one commit in common with it. This code is then changed to add new
+features or to experiment with the existing code and possibly improve or rewrite it, while the main branch maintains
+functionality. This is all done within a single repository, and the branches can be "merged" back together once the
+features or optimization or whatever the purpose of the branch has started working consistently and is stable enough
+to add back to the main branch of code.
