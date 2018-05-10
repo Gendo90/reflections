@@ -1,0 +1,8 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+You could use a remote repository to access your files from other computers, like if you were changing or upgrading computers and still
+needed access to files. You could also access the files when travelling or from work and from home, if you want to have 24-hour access 
+to files that are on a work computer. You could also use a remote repository to collaborate with others on a project, possibly never 
+even meeting them in person and just seeing their updates to the code base! This would also work well with employees located in 
+different offices who all work on the same project, like if you had a company that hired temporary workers, contractors, etc., or 
+even was just a larger company with people with different specialties in different locations.
