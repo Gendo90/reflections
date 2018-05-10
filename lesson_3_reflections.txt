@@ -6,3 +6,12 @@ to files that are on a work computer. You could also use a remote repository to 
 even meeting them in person and just seeing their updates to the code base! This would also work well with employees located in 
 different offices who all work on the same project, like if you had a company that hired temporary workers, contractors, etc., or 
 even was just a larger company with people with different specialties in different locations.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+There might be changes on the remote server that are not part of what you are working on at the moment, especially if 
+you are working on a branch or some experimental code. You also might miss some of the files or changes to the files 
+if you are always pulling automatically, because then the program might pull files and you might not notice the pull.
+You could also have files turn "wrong" or contain bad code online, if someone made a mistake with a commit, so you do
+not want to pull the code because you know that it will cause the program to run incorrectly (especially if you have 
+a collaborator or someone who tells you that they made a mistake with a commit or push and the project is malfunctioning).
