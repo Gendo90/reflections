@@ -52,3 +52,15 @@ especially if the work could be split into modules and then just combined later 
 on their own modules. That would mean they only really need to discuss the code interfaces between their separate 
 modules of code, and cannot directly edit each others' code, which also makes projects less confusing, if lots of
 people update the same code.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does 
+each approach have?
+
+It would make sense to make changes to a separate branch rather than the master branch because the master branch
+may need to stay functional, especially since GitHub is online and usually public, so users downloading non-
+functional code while the code is getting updated could be a major issue. However, the creating, updating, and then
+merging the separate branch is time consuming and relatively difficult compared to directly changing the master 
+branch, so again you would mainly do this if you had a fully-functional software package that could not have 
+experimental code or features directly added without disrupting functionality, but if you had a smaller, maybe private
+project that was not fully-operational yet, it would make sense to directly change the master and just roll-back 
+changes if they are too far off target.
