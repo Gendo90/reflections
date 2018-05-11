@@ -27,3 +27,15 @@ features or to experiment with the existing code and possibly improve or rewrite
 functionality. This is all done within a single repository, and the branches can be "merged" back together once the
 features or optimization or whatever the purpose of the branch has started working consistently and is stable enough
 to add back to the main branch of code.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+You can see where the state the remote is currently, at least as of the time of the last pull request.
+You can also roll back changes to that state if necessary, since the shared online state of the repository should
+be stable if it is open to the public or your coworkers and shared. You can also work from that last known 
+remote state on your local machine, and then push changes when done - that way you would know that there 
+are no conflicts unless someone else changed the repository online, so you would only need to do a fast-forward 
+merge if you pushed your updated repository back online. This would be useful for a single-person project, since 
+nobody else could make changes online to your own repository, so most merges would be fast-forward. You could also 
+make multiple commits and then push the repository back, instead of pushing after each commit, and the functionality 
+should still be the same but you would need to enter fewer commands.
