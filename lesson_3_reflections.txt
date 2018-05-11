@@ -39,3 +39,16 @@ merge if you pushed your updated repository back online. This would be useful fo
 nobody else could make changes online to your own repository, so most merges would be fast-forward. You could also 
 make multiple commits and then push the repository back, instead of pushing after each commit, and the functionality 
 should still be the same but you would need to enter fewer commands.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+It would be more difficult on the whole to collaborate without using Git or GitHub because it would be harder to 
+keep track of the changes to the project and harder to organize. You do not need to save different versions of the 
+files since Git has "save" states that you can return to, and GitHub allows multiple people to view and work on 
+the same project. So Git and GitHub essentially save time, space, and organize the work better. However, if everyone 
+is needed to reach consensuses on acceptable code or to debate features, it becomes harder to get the project to 
+run as smoothly and the work to go as fast. So there might be some performance issues to using Git or GitHub, 
+especially if the work could be split into modules and then just combined later - with individual developers working
+on their own modules. That would mean they only really need to discuss the code interfaces between their separate 
+modules of code, and cannot directly edit each others' code, which also makes projects less confusing, if lots of
+people update the same code.
